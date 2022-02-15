@@ -1,4 +1,4 @@
 # TC2005B
 Actividades de Construcción de software y toma de decisiones
 
-Hola
+En este git estan los laboratorios de Fermín Méndez García A01703366
