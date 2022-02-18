@@ -17,11 +17,13 @@ body {
   /* Clases*/
   .brooks{
     font-size: large;
+    color:darkgreen;
   }
 
   /* selector de id. Un solo elemento*/
   #craig{
       background-color: lavender;
+      color:brown;
   }
 
   /* Las pseudoclases ayudan a cambiar dinamicamente y se puede por etiquetas, id o lo que quieras 

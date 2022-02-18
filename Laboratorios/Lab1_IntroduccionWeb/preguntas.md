@@ -31,7 +31,7 @@ Trace-> Contains the body requested
 
     ¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?
 
-    Post por la seguridad
+    Post por la seguridad. Usamos post porque el cuerpo puede ir encriptado
 
     ¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?
     Get
@@ -84,3 +84,18 @@ HTML5 es una especificación. Se trata de cubrir los estandares
 
     Aviani.(2019).An introduction to HTTP: everything you need to know
 .Free Code Camp. Recuperado de https://www.freecodecamp.org/news/http-and-everything-you-need-to-know-about-it/
+
+
+Lab 3:
+
+Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS? 
+Utilizarla cuando se quiera priorizar un estilo sobre otro predefinido en una clase o id.
+
+
+Si se pone una imagen de fondo en una página HTML, ¿por qué debe escogerse con cuidado?
+Como ingeniero de software, ¿cuál es tu recomendación al elegir las unidades de un propiedad de estilo entre %, px y pt? Para tamaños fijos como letras es mejor unidades fijas como px o pt mientras que en otras medidas que se busca mover de una manera más dinámica usemos em o % como las distancias entre elementos de acuerdo al tamaño de la pantalla.
+
+¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio?
+Porque el navegador interpreta más rápido el código sin espacios
+
+w3School(2022).The !important Rule. Recuperado de https://www.w3schools.com/css/css_important.asp
