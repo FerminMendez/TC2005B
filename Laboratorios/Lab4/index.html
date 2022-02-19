@@ -10,19 +10,19 @@
   <title>Document</title>
 </head>
 
-<body >
+<body>
   <!-- Encabezado -->
   <div class="max-w-full max-h-full bg-slate-600 mx-20 my-20 text-center space-y-10 ">
-    <h1 class=" text-8xl mt-10">Titulo</h1>
+    <h1 class=" text-8xl mt-10">Vendo tenis</h1>
   </div>
   <!-- Seccion de fotos e información -->
-  <div class="max-w-full max-h-full bg-slate-600 mx-20 my-20 space-y-10 flex flex-row py-10 px-10">
+  <div class="max-w-full max-h-full bg-slate-600 mx-20 my-20 space-y-10 flex flex-row p-10">
     <!-- Seccion de solo foto -->
-    <div class="basis-3/5 flex flex-row">
+    <div class="basis-3/5 flex flex-col space-y-10">
       <!-- Par 1 -->
-      <div flex flex-col >
+      <div class="flex flex-row space-x-10">
         <!-- Foto -->
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card w-1/3 bg-base-100 shadow-xl grow">
           <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes"></figure>
           <div class="card-body">
             <h2 class="card-title">
@@ -32,7 +32,7 @@
           </div>
         </div>
         <!-- Foto -->
-        <div class="card w-96 bg-base-100 shadow-xl ">
+        <div class="card w-1/3 bg-base-100 shadow-xl grow">
           <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes"></figure>
           <div class="card-body">
             <h2 class="card-title">
@@ -43,10 +43,10 @@
         </div>
       </div>
 
-       <!-- Par 2 -->
-       <div flex flex-col >
+      <!-- Par 2 -->
+      <div class="flex flex-row space-x-10">
         <!-- Foto -->
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card w-1/3 bg-base-100 shadow-xl grow">
           <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes"></figure>
           <div class="card-body">
             <h2 class="card-title">
@@ -56,7 +56,7 @@
           </div>
         </div>
         <!-- Foto -->
-        <div class="card w-96 bg-base-100 shadow-xl ">
+        <div class="card w-1/3 bg-base-100 shadow-xl grow">
           <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes"></figure>
           <div class="card-body">
             <h2 class="card-title">
@@ -69,11 +69,12 @@
 
     </div>
     <!-- Divider -->
-    <div class="divider divider-horizontal"></div>
+    <div class="divider divider-horizontal px-10"></div>
     <!-- Seccion de parrafo en texto -->
-    <div class="basis-1/3 ">
+    <div class="basis-1/3 ml-10">
       <h2 class="text-6xl my-8">Una gran descripcion a continuacion</h2>
-      <p class="text-3xl">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el
+      <p class="text-3xl pr-20 text-justify	">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem
+        Ipsum ha sido el
         texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se
         dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro
         de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos
@@ -83,8 +84,44 @@
     </div>
   </div>
   <!-- Sección de tabla -->
-  <div>Esta parte iria una tabla
-
+  <div class="max-w-full max-h-full bg-slate-600 mx-20 my-20 space-y-10 flex flex-row p-10">
+    <!-- Tabla -->
+    <div class="overflow-x-auto">
+      <table class="table w-full">
+        <!-- head -->
+        <thead>
+          <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Job</th>
+            <th>Favorite Color</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- row 1 -->
+          <tr>
+            <th>1</th>
+            <td>Cy Ganderton</td>
+            <td>Quality Control Specialist</td>
+            <td>Blue</td>
+          </tr>
+          <!-- row 2 -->
+          <tr>
+            <th>2</th>
+            <td>Hart Hagerty</td>
+            <td>Desktop Support Technician</td>
+            <td>Purple</td>
+          </tr>
+          <!-- row 3 -->
+          <tr>
+            <th>3</th>
+            <td>Brice Swyre</td>
+            <td>Tax Accountant</td>
+            <td>Red</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 
 
