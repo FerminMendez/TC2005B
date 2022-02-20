@@ -1,0 +1,25 @@
+    ¿Qué diferencias y semejanzas hay entre Java y JavaScript?
+Ambos son lenguajes de programación. Pero son muy distintos
+Java está enfocado en el paradigma orientado a objetos y js basado en prototipos.
+Js se ejecuta en los navegadores y java nesecita compilar.
+Js no tiene tipado de variables.
+Js por lo tanto es más flexible.
+
+
+
+¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)
+now,parse, UTC.
+Constructor (milisegundos)
+Constructor (cadenaFecha)
+Constructor(año_num,mes_num,dia_num,hor_num,min_num,seg_num_mils_num)
+
+¿Qué métodos tienen los arreglos? (Menciona al menos 5*)
+push, pop, map, filter y reduce.
+
+¿Cómo se declara una variable con alcance local dentro de una función?
+Con let
+¿Qué implicaciones tiene utilizar variables globales dentro de funciones?
+Que se pueden modificar fuera de dicha función. En otras palabras hacer esto es una mala práctica ya que se compromete al integridad de dicha variable.
+
+
+ISDI Coders.(2017). ¿Es lo mismo Java que Javascript? Recuperado de https://isdicoders.com/es/blog/es-lo-mismo-java-que-javascript_19381
