@@ -36,3 +36,7 @@ p{
     text-transform: none;
 
 }
+
+table, th, td {
+    border: 1px solid;
+  }
