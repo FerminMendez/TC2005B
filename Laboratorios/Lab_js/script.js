@@ -66,6 +66,38 @@ function outp3() {
     result += "<div>" + array + "]<div>";
     document.getElementById("output_p3").innerHTML = result;
 }
-function addNum(array, n) {
-    array.push(n);
+
+function outp4() {
+    let mat = [];
+    let row;
+    let mytable="<table>";
+    let n = 4;
+    let element;
+
+    for (let i = 0; i < n; i++) {
+        mytable += "<tr>";
+        row = [];
+        count = 0;
+        for (let j = 0; j < n; j++) {
+            element = generateRandomInteger(100);
+            count += element;
+            row.push(element);
+            mytable += "<td>" + element + "<td>"
+        }
+        mat.push(row);
+        mytable += "<td>" + count / n + "<td>";
+        mytable += "<tr>";
+    }
+    mytable += "<table>";
+    document.getElementById("output_p4").innerHTML = mytable;
+}
+
+function outp5(){
+    let x= window.prompt("Ingresar número");
+    let sol="El número "+x+" invertido es ";
+    while(x>=1){
+        sol+=x%10;
+        x=Math.floor(x/10);
+    }
+    document.getElementById("output_p5").innerHTML=sol;
 }
