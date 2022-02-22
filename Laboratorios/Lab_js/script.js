@@ -101,3 +101,14 @@ function outp5(){
     }
     document.getElementById("output_p5").innerHTML=sol;
 }
+
+function outp6(){
+
+    let x= window.prompt("Ingresar número");
+    let sol="El número "+x+" invertido es ";
+    while(x>=1){
+        sol+=x%10;
+        x=Math.floor(x/10);
+    }
+    document.getElementById("output_p5").innerHTML=sol;
+}
