@@ -70,7 +70,7 @@ function outp3() {
 function outp4() {
     let mat = [];
     let row;
-    let mytable="<table>";
+    let mytable = "<table>";
     let n = 4;
     let element;
 
@@ -92,23 +92,39 @@ function outp4() {
     document.getElementById("output_p4").innerHTML = mytable;
 }
 
-function outp5(){
-    let x= window.prompt("Ingresar número");
-    let sol="El número "+x+" invertido es ";
-    while(x>=1){
-        sol+=x%10;
-        x=Math.floor(x/10);
+function outp5() {
+    let x = window.prompt("Ingresar número");
+    let sol = "El número " + x + " invertido es ";
+    while (x >= 1) {
+        sol += x % 10;
+        x = Math.floor(x / 10);
     }
-    document.getElementById("output_p5").innerHTML=sol;
+    document.getElementById("output_p5").innerHTML = sol;
 }
 
-function outp6(){
-
-    let x= window.prompt("Ingresar número");
-    let sol="El número "+x+" invertido es ";
-    while(x>=1){
-        sol+=x%10;
-        x=Math.floor(x/10);
+function outp6() {
+    let nombre = prompt("¿Como se llama tu gato?");
+    let edad = prompt("¿´Qué edad tiene?");
+    function gato(name, age) {
+        this.nombre = name;
+        this.edad = age;
+        this.maulla = function () {
+            document.getElementById("output_p6").innerHTML = nombre + ": Miauuu";
+        }
+        this.duerme = function () {
+            document.getElementById("output_p6").innerHTML = "Shhhhh"+ nombre + "está durmiendo. Zzzzzzzz Zzzzzz";
+        }
+    
     }
-    document.getElementById("output_p5").innerHTML=sol;
+    let mycat = new gato(nombre, edad);
+    console.log(mycat)
+    let respuesta = confirm("¿Quieres que el gato maulle?");
+    if (respuesta) {
+        mycat.maulla();
+    }
+   else{
+       mycat.duerme();
+   }
+
+
 }
