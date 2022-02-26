@@ -19,21 +19,41 @@
         </div>
         <div>
             <label for="password">Escribe tu password</label>
-            <input id="password" type="password" class="text-black	">
+            <input id="password" type="password" class="text-black">
         </div>
         <button id="validate" class="border-4">Validar contraseñas</button>
         <div id="out"></div>
     </div>
 
-<footer class="text-lg text-center " >
-    Referencias:
-    <div class="flex flex-col">
-        <a href="https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks" alt="Como poner hipervinculos" target="_blank">Cómo crear hipervínculos</a>
-        <a href="https://tailwindcss.com/" alt="Tailwind css" target="_blank">Tailwind css</a>
-
+    <div id="venta" class="text-center my-20  text-6xl flex flex-col space-y-4 ">
+        <h1 class="text-center text-6xl bg-blue-400 "> Vendo cartas</h1>
+        <div id="productos" class="mx-20 flex flex-col my-20">
+            <button id="ver_oferta" class="border-4"> Ver oferta</button>
+            <div id="producto1" class="flex flex-row m-5">
+                <div id="im1"></div>
+                <div class="space-y-4 m-10 flex flex-col">
+                <div id="name1"></div>
+                    <div id="costo1"></div>
+                    <div id="stock1"></div>
+                    <div id="piezas_compra1"></div>
+                </div>
+            </div>
+           
+        </div>
     </div>
-</footer>
- 
+
+    <footer class="text-lg text-center fixed bottom-0 left-0 right-0">
+        Referencias:
+        <div class="flex flex-col">
+            <a href="https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks"
+                alt="Como poner hipervinculos" target="_blank">Cómo crear hipervínculos</a>
+            <a href="https://tailwindcss.com/" alt="Tailwind css" target="_blank">Tailwind css</a>
+            <a href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_style_position"
+                alt="Top attribute link" target="_blank">Top attribute</a>
+
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 
