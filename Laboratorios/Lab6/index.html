@@ -11,19 +11,25 @@
 </head>
 
 <body>
-    <h1 class="text-center text-8xl bg-blue-400	p-6"> Laboratorio 6</h1>
-    <div class="text-center my-20 bg-stone-600 text-6xl">
-        <label for="jugador" class="m-5">Escribe un texto</label>
-        <input id="jugador" type="atext">
-        <div id="respuesta">
-            
+    <h1 class="text-center text-8xl bg-blue-400	p-6 "> Laboratorio 6</h1>
+    <div class="text-center my-20  text-6xl flex flex-col space-y-4">
+        <div class="my-10">
+            <label for="user" class="m-5">Escribe tu usuario</label>
+            <input id="user" type="atext" class="text-black	">
         </div>
+        <div>
+            <label for="password">Escribe tu password</label>
+            <input id="password" type="password" class="text-black	">
+        </div>
+        <button id="validate" class="border-4">Validar contraseñas</button>
+        <div id="out"></div>
     </div>
 
 <footer class="text-lg text-center " >
     Referencias:
-    <div>
+    <div class="flex flex-col">
         <a href="https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks" alt="Como poner hipervinculos" target="_blank">Cómo crear hipervínculos</a>
+        <a href="https://tailwindcss.com/" alt="Tailwind css" target="_blank">Tailwind css</a>
 
     </div>
 </footer>
