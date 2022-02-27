@@ -2,4 +2,5 @@
 
 ¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?
 
+
 Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?
