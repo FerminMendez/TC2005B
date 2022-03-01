@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "name": "spirit",
+  "version": "1.0.0",
+  "description": "laboratorio 11",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Fermin Mendez",
+  "license": "MIT"
+}
