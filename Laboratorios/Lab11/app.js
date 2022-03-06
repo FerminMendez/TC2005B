@@ -1,35 +1,34 @@
-const express = require('express');
-const app = express();
-
+const express = require ('express');
+const app= express();
 const bodyParser = require('body-parser');
-const path= require('path');
 
-app.use(express.static(path.join(__dirname,'public')));
+const misRutas = require('./routes/rutas_fonda');
+
+
 app.use(bodyParser.urlencoded({extended: false}));
-//Middleword
 
-app.use((request,response,next)=>{
-    console.log('Middleword');
-    next();
-})
 
-app.use((request,response,next)=>{
-    console.log('Otro Middleword');
-    next();
-})
-
-app.use('/hola',(request,response,next)=>{
-    console.log('Ruta hola');
-    response.send("Uyys que cosas, ¿no?");
-})
-
-app.use('/ruta', (request, response, next) => {
-    console.log('Ruta ruta');
-
-    response.send('Respuesta de la ruta "/ruta"'); 
+app.use((req, res, next) => {
+    console.log('Segundo middle word despues del de body parser');
+    next(); //Le permite a la petición avanzar hacia el siguiente middleware
 });
 
+app.get('/menu',(req,res)=>{
+    res.send('Este es el menu que tenemos'); 
+
+})
+app.get('/menu/comida',(req,res)=>{
+    res.send('De comida hay papas, hamburguesas y jochos'); 
+
+})
+app.get('/menu/bebidas',(req,res)=>{
+    res.send('Pa tomar nomas hay checos y awuita'); 
+
+})
 
 
-const port=4000;
+
+
+const port=3000;
 app.listen(port);
+//Uso de las middle words
