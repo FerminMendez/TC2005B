@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.0.9/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio javascript</title>
+</head>
+
+<body>
+    <!-- Encabezado de la pagina -->
+    <div class="max-w-full max-h-full bg-slate-600 mx-20 my-10 text-center space-y-10 py-0.5">
+        <h1 class=" text-8xl mt-10">Bienvenido al Laboratorio 4.</h1>
+    </div>
+    <!-- Seeccion problema 1 -->
+    <div class="max-w-full max-h-full bg-slate-600 mx-20 my-10 text-center py-3 space-y-10 px-10">
+        <h2>Problema 1:</h2>
+        <p>Entrada: un número pedido con un prompt. Salida: Una tabla con los números del 1 al número dado con sus
+            cuadrados y cubos. Utiliza document.write para producir la salida</p>
+        <button class="text-4xl" onclick="outp1()">Ingresar número</button>
+        <div id="output_p1" class="solution overflow-x-auto"></div>
+    </div>
+
+    <!-- Seeccion problema 2 -->
+    <div class="max-w-full max-h-full bg-slate-600 mx-20 my-10 text-center py-3 space-y-10 px-10">
+        <h2>Problema 2:</h2>
+        <p>Entrada: Usando un prompt se pide el resultado de la suma de 2 números generados de manera aleatoria. Salida:
+            La página debe indicar si el resultado fue correcto o incorrecto, y el tiempo que tardó el usuario en
+            escribir la respuesta.</p>
+        <button class="text-4xl" onclick="outp2()">Te reto a sumar</button>
+        <div id="output_p2" class="solution"></div>
+    </div>
+
+
+    <!-- Seeccion problema 3 -->
+    <div class="max-w-full max-h-full bg-slate-600 mx-20 my-10 text-center py-3 space-y-10 px-10">
+        <h2>Problema 3:</h2>
+        <p>Función: contador. Parámetros: Un arreglo de números. Regresa: La cantidad de números negativos en el
+            arreglo, la cantidad de 0's, y la cantidad de valores mayores a 0 en el arreglo.</p>
+        <button class="text-4xl" onclick="outp3()">Generar array</button>
+        <div id="output_p3" class="solution"></div>
+    </div>
+
+    <!-- Seeccion problema 4 -->
+    <div class="max-w-full max-h-full bg-slate-600 mx-20 my-10 text-center py-3 space-y-10 px-10">
+        <h2>Problema 4:</h2>
+        <p>Función: promedios. Parámetros: Un arreglo de arreglos de números. Regresa: Un arreglo con los promedios de
+            cada uno de los renglones de la matriz. </p>
+        <button class="text-4xl" onclick="outp4()">Promediar matriz</button>
+        <div id="output_p4" class="solution"></div>
+    </div>
+
+    <!-- Seeccion problema 5 -->
+    <div class="max-w-full max-h-full bg-slate-600 mx-20 my-10 text-center py-3 space-y-10 px-10">
+        <h2>Problema 5:</h2>
+        <p>Función: inverso. Parámetros: Un número. Regresa: El número con sus dígitos en orden inverso.</p>
+        <button class="text-4xl" onclick="outp5()">Invertir número</button>
+        <div id="output_p5" class="solution"></div>
+    </div>
+
+    <!-- Seeccion problema 6 -->
+    <div class="max-w-full max-h-full bg-slate-600 mx-20 my-10 text-center py-3 space-y-10 px-10">
+        <h2>Problema 6:</h2>
+        <p>Dado el nombre de un gato y su edad. Pregunta al usuario si el gato maulla. Si maulla manda un mensaje. De lo contrario guarda silencio porque el gato esta durmiendo.
+        </p>
+        <button class="text-4xl " onclick="outp6()">Preguntar por un gato</button>
+        <div id="output_p6" class="solution"></div>
+    </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

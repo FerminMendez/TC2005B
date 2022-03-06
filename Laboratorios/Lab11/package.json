@@ -1,22 +1,21 @@
 {
-  "devDependencies": {
-    "nodemon": "^2.0.15"
-  },
-  "name": "spirit",
+  "name": "lab11",
   "version": "1.0.0",
-  "description": "laboratorio 11",
-  "main": "app.js",
+  "description": "Laboratorio 11 pruebas con express",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js"
   },
   "keywords": [
-    "node"
+    "node",
+    "express"
   ],
   "author": "Fermin Mendez",
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.2",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
   }
 }
