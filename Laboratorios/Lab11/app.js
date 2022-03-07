@@ -2,11 +2,9 @@ const express = require ('express');
 const app= express();
 const bodyParser = require('body-parser');
 
-const misRutas = require('./routes/rutas_fonda');
-
-
 app.use(bodyParser.urlencoded({extended: false}));
 
+const misRutas = require('./routes/rutas_fonda');
 
 app.use((req, res, next) => {
     console.log('Segundo middle word despues del de body parser');
@@ -29,6 +27,6 @@ app.get('/menu/bebidas',(req,res)=>{
 
 
 
-const port=3000;
+const port=4000;
 app.listen(port);
 //Uso de las middle words
