@@ -1,0 +1,6 @@
+Se pone el objeto que se exportara
+
+Lleva un constructor, un save y un fetch all
+
+El fetch all se aplica a las instancias de la clase o a toda la clase por asi decirlo
+Mienntras que el save es a una instancia nada mas.

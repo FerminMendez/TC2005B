@@ -1,0 +1,6 @@
+En controllers van todos los controladores xd
+Basicamente las actiones que necesitas
+
+De routes-> Pide a controller. En routes rutas, en contorler las acciones asignadas a cada ruta.
+
+No olvidar el require de models.

@@ -1,0 +1,2 @@
+Aqui van las rutas que vamos a manejar.
+Las que redireccionan a las funciones que estan en los controladores
