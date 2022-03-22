@@ -1,0 +1,61 @@
+<%- include('includes/head.ejs')-%>
+    <div class="text-center w-full m-30 pt-4">
+        <h1 class="text-red-300	 text-6xl	font-bold font-sans">Top 10 animes según
+            Mike</h1>
+
+        <p class="text-white text-2xl mt-10">Estos son nuestros animes:</p>
+        <div class="grid grid-cols-3 m-10">
+            <% if (lista_animes.length> 0) { %>
+                <% for (let anime of lista_animes) { %>
+
+
+                    <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                        <img class="w-full" src=<%- anime.imagen -%> >
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">
+                                <%- anime.nombre -%>
+                            </div>
+                            <p class="text-gray-300 text-base">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!
+                                Maiores et
+                                perferendis eaque, exercitationem praesentium nihil.
+                            </p>
+                        </div>
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#topMike</span>
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Anime</span>
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#otaku</span>
+                        </div>
+                    </div>
+
+                    <% } %>
+                        <% } else { %>
+                            <h3>No tenemos animes</h3>
+                            <% } %>
+        </div id="add_anime">
+
+        <form class="space-y-5 " action="/anime" method="POST">
+            <label for="nombre">Nombre del nuevo anime: </label>
+            <input class="text-black" type="text" name="nombre" required>
+            <br>
+            <label for="imagen">Url de la nueva imagen</label>
+            <input class="text-black" type="text" name="imagen" required>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+
+        <!-- Este boton debe mostrar la forma de arriba -->
+        <!-- <button
+            class="text-red-500 text-8xl font-bold bg-transparent border border-solid border-red-500 hover:bg-red-500 hover:text-white active:bg-red-600 font-bold uppercase px-8 py-3 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+            type="button">
+            +
+        </button> -->
+        <div>
+        </div>
+
+
+    </div>
+    <%- include('includes/foot.ejs') %>

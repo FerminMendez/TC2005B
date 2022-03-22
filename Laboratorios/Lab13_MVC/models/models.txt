@@ -4,3 +4,10 @@ Lleva un constructor, un save y un fetch all
 
 El fetch all se aplica a las instancias de la clase o a toda la clase por asi decirlo
 Mienntras que el save es a una instancia nada mas.
+
+Tambien recordar hacer la validadopn de insersión segura con db.exectutt ???
+
+db execute devuelve una promesa-> Esas se manejan con then y catch
+
+
+Ruta para insertar datos del usuario

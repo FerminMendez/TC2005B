@@ -1,0 +1,5 @@
+
+
+Este pa la base de datos npm install --save mysql2
+
+Tener cuidado de poner el git ignore si tiene información sensible de contraseñas.
